@@ -28,6 +28,7 @@ public struct EditorURLConfig: Codable {
         case document
         case caches
         case temp
+        case ApplicationSupport
     }
     /// 文件名称
     public let fileName: String
@@ -45,11 +46,18 @@ public struct EditorURLConfig: Codable {
         switch pathType {
         case .document:
             filePath = PhotoTools.getSystemDocumentFolderPath() + "/"
+            break;
         case .caches:
             filePath = PhotoTools.getSystemCacheFolderPath() + "/"
+            break;
         case .temp:
             filePath = PhotoTools.getSystemTempFolderPath()
+            break;
+        case .ApplicationSupport:
+            filePath = PhotoTools.getSystemApplicationSupportPath()
+            break;
         }
+    
         filePath.append(contentsOf: fileName)
         return .init(fileURLWithPath: filePath)
     }

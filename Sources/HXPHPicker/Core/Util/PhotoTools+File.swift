@@ -42,6 +42,13 @@ public extension PhotoTools {
         NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last!
     }
     
+    //**liguangluo
+    static func getSystemApplicationSupportPath() -> String {
+        NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true).last!
+    }
+    //**end
+    
+    
     /// 获取系统缓存文件夹路径
     static func getSystemCacheFolderPath() -> String {
         NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).last!
