@@ -88,8 +88,24 @@ class EditorConfigurationViewController: UITableViewController {
                 }
             }else {
                 if assetType == 0 {
+                    videoConfig.isNeedDefaultMute = true;//默认编辑的视频是没有声音的
+                    videoConfig.toolView.toolOptions.removeAll { element in
+                        if element.type == .cropSize || element.type == .filter  {
+                            return false;
+                        }
+                        return true;
+                    }
+                    //更换图标
+                    let cropTime = EditorToolOptions.init(
+                        imageName: "hx_editor_video_crop2",
+                        type: .cropTime
+                    )
+                    videoConfig.toolView.toolOptions.append(cropTime)
+                    videoConfig.cropSize.aspectRatios = [[0, 0],  [9, 16]]
+                    
                     let vc = EditorController.init(videoURL: videoURL, config: videoConfig)
                     vc.videoEditorDelegate = self
+                    
                     present(vc, animated: true, completion: nil)
                 }else {
                     let networkURL = URL(

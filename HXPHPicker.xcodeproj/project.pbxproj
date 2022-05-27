@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69C14876283FAF960002FEA1 /* Pods_HXPHPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 673AAF6C9FC36AE5B6E9959D /* Pods_HXPHPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B02F2BC2656186500FA94CD /* Core+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B02F2BB2656186500FA94CD /* Core+Data.swift */; };
 		7B0650B927269B6900FE3F92 /* PhotoPickerWeChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0650B827269B6900FE3F92 /* PhotoPickerWeChatViewCell.swift */; };
 		7B09599125FB351A005DB27B /* PhotoPickerBaseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B09599025FB351A005DB27B /* PhotoPickerBaseViewCell.swift */; };
@@ -170,7 +171,6 @@
 		7BA9562A26BE384F004587FA /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9562926BE384F004587FA /* PhotoBrowserViewController.swift */; };
 		7BA9562C26BE4411004587FA /* PhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA9562B26BE4411004587FA /* PhotoBrowser.swift */; };
 		7BAAD30C2605D59F005C36B7 /* PhotoEditorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAAD30B2605D59F005C36B7 /* PhotoEditorConfiguration.swift */; };
-		7BAB3B43265F9B7D0030A35D /* Pods_HXPHPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 673AAF6C9FC36AE5B6E9959D /* Pods_HXPHPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BB2421926D892B100424A8D /* PhotoPreviewViewController+NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2421826D892B100424A8D /* PhotoPreviewViewController+NavigationController.swift */; };
 		7BB2421B26D892ED00424A8D /* PhotoPreviewViewController+SelectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2421A26D892ED00424A8D /* PhotoPreviewViewController+SelectBox.swift */; };
 		7BB2421D26D8944400424A8D /* PhotoPickerViewController+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB2421C26D8944400424A8D /* PhotoPickerViewController+Cell.swift */; };
@@ -345,7 +345,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7BAB3B43265F9B7D0030A35D /* Pods_HXPHPicker.framework in Embed Frameworks */,
+				69C14876283FAF960002FEA1 /* Pods_HXPHPicker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
