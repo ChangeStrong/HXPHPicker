@@ -466,6 +466,14 @@ open class VideoEditorViewController: BaseViewController {
                 )
             }
         }
+        //**liguangluo
+        if config.isNeedDefaultMute == true {
+            //默认进来就静音
+            self.musicView.originalSoundButton.isSelected = false;
+            self.videoVolume = 0;
+            print("默认静音了...")
+        }
+        //**end
     }
     @objc func didBackClick() {
         backAction()

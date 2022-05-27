@@ -84,6 +84,9 @@ open class VideoEditorConfiguration: EditorConfiguration {
         )
         return .init(toolOptions: [graffiti, chartlet, text, music, cropSize, cropTime, filter])
     }()
+    //**liguangluo
+    public var isNeedDefaultMute:Bool = false;
+    //**end
 }
 
 extension VideoEditorConfiguration {
